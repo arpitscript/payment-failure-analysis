@@ -1,0 +1,9 @@
+device_id,device_type,os_version
+1,Android,14
+2,Android,13
+3,Android,11
+4,Android,9
+5,iOS,17
+6,iOS,16
+7,Web,Chrome
+8,Web,Safari

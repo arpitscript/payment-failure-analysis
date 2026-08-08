@@ -1,0 +1,77 @@
+// Star schema for the payment analysis DB.
+// Render:  dot -Tpng docs/er_diagram.dot -o docs/er_diagram.png
+digraph payments_schema {
+    graph [rankdir=LR, splines=ortho, nodesep=0.6, ranksep=1.4, bgcolor="white",
+           fontname="Helvetica"];
+    node  [shape=plaintext, fontname="Helvetica"];
+    edge  [color="#555555", arrowhead=crow, arrowtail=none, dir=both,
+           arrowtail=none, fontname="Helvetica", fontsize=10];
+
+    transactions [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4" bgcolor="#eef4fb">
+          <tr><td bgcolor="#2f5d8a"><font color="white"><b>transactions (fact)</b></font></td></tr>
+          <tr><td align="left"><b>txn_id</b>  PK</td></tr>
+          <tr><td align="left">user_id  FK</td></tr>
+          <tr><td align="left">bank_id  FK</td></tr>
+          <tr><td align="left">mode_id  FK</td></tr>
+          <tr><td align="left">device_id  FK</td></tr>
+          <tr><td align="left">merchant_id  FK</td></tr>
+          <tr><td align="left">reason_id  FK (null)</td></tr>
+          <tr><td align="left">amount</td></tr>
+          <tr><td align="left">txn_time</td></tr>
+          <tr><td align="left">status</td></tr>
+        </table>>];
+
+    users [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4" bgcolor="#f4f4f4">
+          <tr><td bgcolor="#6b7280"><font color="white"><b>users</b></font></td></tr>
+          <tr><td align="left"><b>user_id</b>  PK</td></tr>
+          <tr><td align="left">name</td></tr>
+          <tr><td align="left">city</td></tr>
+          <tr><td align="left">signup_date</td></tr>
+        </table>>];
+
+    banks [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4" bgcolor="#f4f4f4">
+          <tr><td bgcolor="#6b7280"><font color="white"><b>banks</b></font></td></tr>
+          <tr><td align="left"><b>bank_id</b>  PK</td></tr>
+          <tr><td align="left">bank_name</td></tr>
+        </table>>];
+
+    payment_modes [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4" bgcolor="#f4f4f4">
+          <tr><td bgcolor="#6b7280"><font color="white"><b>payment_modes</b></font></td></tr>
+          <tr><td align="left"><b>mode_id</b>  PK</td></tr>
+          <tr><td align="left">mode_name</td></tr>
+        </table>>];
+
+    devices [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4" bgcolor="#f4f4f4">
+          <tr><td bgcolor="#6b7280"><font color="white"><b>devices</b></font></td></tr>
+          <tr><td align="left"><b>device_id</b>  PK</td></tr>
+          <tr><td align="left">device_type</td></tr>
+          <tr><td align="left">os_version</td></tr>
+        </table>>];
+
+    merchants [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4" bgcolor="#f4f4f4">
+          <tr><td bgcolor="#6b7280"><font color="white"><b>merchants</b></font></td></tr>
+          <tr><td align="left"><b>merchant_id</b>  PK</td></tr>
+          <tr><td align="left">merchant_name</td></tr>
+          <tr><td align="left">category</td></tr>
+        </table>>];
+
+    failure_reasons [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4" bgcolor="#f4f4f4">
+          <tr><td bgcolor="#6b7280"><font color="white"><b>failure_reasons</b></font></td></tr>
+          <tr><td align="left"><b>reason_id</b>  PK</td></tr>
+          <tr><td align="left">reason_text</td></tr>
+        </table>>];
+
+    users           -> transactions;
+    banks           -> transactions;
+    payment_modes   -> transactions;
+    devices         -> transactions;
+    merchants       -> transactions;
+    failure_reasons -> transactions;
+}

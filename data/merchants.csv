@@ -1,0 +1,61 @@
+merchant_id,merchant_name,category
+1,"Buch, Sridhar and Virk",Food Delivery
+2,Desai LLC,Utilities
+3,Sood-Bora,Utilities
+4,Shetty Group,Healthcare
+5,Sanghvi PLC,Groceries
+6,"Sheth, Singh and Borde",Groceries
+7,Sekhon-Singh,Groceries
+8,"Choudhry, Chana and Dass",Groceries
+9,"Chauhan, Barad and Shah",Entertainment
+10,"Khurana, Sibal and Bhagat",Travel
+11,"Narayanan, Kurian and Murthy",Travel
+12,Dyal Group,Education
+13,Murty-Comar,Groceries
+14,Kaul Ltd,Travel
+15,Barad LLC,Travel
+16,Om Inc,Healthcare
+17,"Kohli, Barad and Rai",Food Delivery
+18,Vig Group,Food Delivery
+19,Minhas Inc,Groceries
+20,Kari Inc,Entertainment
+21,Narayanan-Yadav,Healthcare
+22,Jaggi-Buch,Education
+23,Tak Ltd,Healthcare
+24,Sethi Inc,Healthcare
+25,"Chawla, Deshpande and Parmar",Utilities
+26,Narasimhan and Sons,Education
+27,"Chhabra, Pillai and Banerjee",Utilities
+28,"Choudhry, Walla and Mukhopadhyay",Healthcare
+29,Deshmukh-Kapadia,Education
+30,Mitter Inc,Travel
+31,"Ravi, Raman and Minhas",Entertainment
+32,Arya-Barad,E-commerce
+33,Johal-Kata,E-commerce
+34,Kala-Dara,Healthcare
+35,Ganguly-Sankaran,Healthcare
+36,Pingle PLC,Utilities
+37,Anne LLC,Travel
+38,"Sachar, Mani and Saxena",Food Delivery
+39,Viswanathan PLC,Healthcare
+40,Bobal Group,Healthcare
+41,"Kamdar, Rout and Sule",Entertainment
+42,Chaudhari PLC,Education
+43,Guha Group,Utilities
+44,Venkataraman and Sons,Groceries
+45,Kumar PLC,Education
+46,Bhakta-Oommen,Groceries
+47,"Hora, Bal and Ramesh",Travel
+48,Prabhu PLC,Education
+49,Sanghvi LLC,Groceries
+50,Ramanathan-Anand,Education
+51,Misra-Batta,E-commerce
+52,Patla Group,Healthcare
+53,"Sathe, Bahl and Sidhu",Utilities
+54,"Patel, Mani and Mann",Entertainment
+55,"Dhaliwal, Parmar and Aurora",Travel
+56,Memon-Chana,Utilities
+57,Sarin-Shankar,Food Delivery
+58,Kade-Dhillon,Healthcare
+59,Dass-Kannan,E-commerce
+60,"Prasad, Kara and Bhat",E-commerce

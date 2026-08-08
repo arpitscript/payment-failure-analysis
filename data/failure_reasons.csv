@@ -1,0 +1,8 @@
+reason_id,reason_text
+1,Insufficient Balance
+2,Bank Server Timeout
+3,Invalid OTP / Authentication Failed
+4,Payment Gateway Error
+5,Transaction Limit Exceeded
+6,User Cancelled
+7,Network Timeout
