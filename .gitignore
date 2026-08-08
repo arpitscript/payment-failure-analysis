@@ -1,0 +1,18 @@
+# python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# env / secrets
+.env
+
+# os / editor
+.DS_Store
+.idea/
+.vscode/
+
+# local postgres data dir if you keep one in-repo
+pgdata/
+*.log
